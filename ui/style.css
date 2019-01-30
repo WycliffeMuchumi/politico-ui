@@ -56,13 +56,9 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* width: 400px; */
-    /* height: 300px; */
-  }
+}
   
 .container .input-form {
-    /* width: 100%;
-    height: 300px; */
     box-sizing: border-box;
     padding: 30px;
   }
@@ -90,8 +86,6 @@ a {
 }
 
 .container .input-form input[type="date"] {
-    /* background-color: #ff0000;
-    border: 1px solid #ff0000; */
     color: #ff6666;
 }
 
@@ -99,7 +93,6 @@ a {
     font-size: 30px;
     margin-left: 25px;
     color: #ff0000;
-    /* text-align: center; */
     margin-bottom: 0;
 }
 
