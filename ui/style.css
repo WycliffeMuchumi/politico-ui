@@ -47,7 +47,7 @@ a {
 .bg-img p {
     font-size: 40px;
     margin-left: 50px;
-    color: #ff0000;
+    color: #ff3385;
     text-align: center;
 }
 
@@ -62,6 +62,10 @@ a {
     box-sizing: border-box;
     padding: 30px;
   }
+
+  .container .input-form a {
+    color: #ff3385;
+  }
   
 .container .input-form input {
     display: block;
@@ -69,30 +73,30 @@ a {
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 15px;
-    border: 1px solid #ff6666;
+    border: 1px solid #ff3385;
     border-radius: 4px;
     outline: none;
   }
 
  label {
-     color:  #ff6666;
+     color:  #ff3385;
      font-size: 15px;
  }
 
 .container .input-form input[type="submit"] {
-     background-color: #ff6666;
-     border: 1px solid #ff6666;
+     background-color: #ff3385;
+     border: 1px solid #ff3385;
      color: #ffffff;
 }
 
 .container .input-form input[type="date"] {
-    color: #ff6666;
+    color: #ff3385;
 }
 
 .container p {
     font-size: 30px;
     margin-left: 25px;
-    color: #ff0000;
+    color: #ff3385;
     margin-bottom: 0;
 }
 
