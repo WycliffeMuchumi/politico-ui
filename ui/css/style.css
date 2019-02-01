@@ -78,15 +78,15 @@ a {
     outline: none;
   }
 
- label {
-     color:  #ff3385;
-     font-size: 15px;
- }
+label {
+    color:  #ff3385;
+    font-size: 15px;
+}
 
 .container .input-form input[type="submit"] {
-     background-color: #ff3385;
-     border: 1px solid #ff3385;
-     color: #ffffff;
+    background-color: #ff3385;
+    border: 1px solid #ff3385;
+    color: #ffffff;
 }
 
 .container .input-form input[type="date"] {
@@ -108,4 +108,65 @@ a {
     background-color: #ff3385;
     color: white;
     text-align: center;
-  }
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    background-color: #ff3385;
+    overflow-x: hidden;
+}
+  
+.sidenav a {
+    padding: 25px 0 25px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+  
+.main {
+    margin-top: 20px;
+    margin-left: 220px;
+    margin-right: 20px;
+}
+
+.active-link {
+    background-color: white;
+    color:#ff3385!important;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ff3385;
+    text-align: left;
+    padding: 8px;
+    font-weight: lighter;
+}
+
+button {
+    background-color: #ff3385;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 4px 10px 4px;
+    cursor: pointer;
+}

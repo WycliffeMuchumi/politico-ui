@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                    </li>
+                    <div class="right-nav">
+                        <li>
+                            <a href="sign-up.html"><i class="fas fa-user-plus"></i>  Sign Up!</a>
+                        </li>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    <div class="sidenav">
+        <a href="#" class="tablink" onclick="openLink(event, 'parties')"><i class="fas fa-handshake"></i> Parties</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'vote')"><i class="fas fa-vote-yea"></i> Vote!</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'offices')"><i class="fas fa-landmark"></i> Elective Posts</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'politicians')"><i class="fas fa-user-secret"></i> Politicians</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'results')"><i class="fas fa-poll"></i> Results</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'voters')"><i class="fas fa-person-booth"></i> Voters</a>
+
+    </div>
+    
+    <div class="main">
+        <div id="parties" class="tab-content">
+            <h1>Parties</h1>
+            <a href="create-party.html"><button>Create Party</button></a>
+            <table>
+                <tr>
+                    <th>Party ID</th>
+                    <th>Party Name</th>
+                    <th>Party Symbol</th>
+                    <th>Manage</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Democrat</td>
+                    <td>Donkey</td>
+                    <td><button class="button">Edit</button><button class="button">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Republican</td>
+                    <td>Elephant</td>
+                    <td><button class="button">Edit</button><button class="button">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Libertarian Party</td>
+                    <td>Porcupine</td>
+                    <td><button class="button">Edit</button><button class="button">Delete</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="vote" class="tab-content" style="display:none">
+            <h2>Voting Link</h2>
+        </div>
+
+        <div id="offices" class="tab-content" style="display:none">
+            <h2>Elective Posts Link</h2>
+        </div>
+
+        <div id="politicians" class="tab-content" style="display:none">
+            <h2>Politicians Link</h2>
+        </div>
+
+        <div id="results" class="tab-content" style="display:none">
+            <h2>Results Link</h2>
+        </div>
+
+        <div id="voters" class="tab-content" style="display:none">
+            <h2>Voters Link</h2>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <p>&copy; 2019 Politico!</p>
+    </div>
+
+    <script src="js/router.js"></script>
+
+</body>
+
+</html>
