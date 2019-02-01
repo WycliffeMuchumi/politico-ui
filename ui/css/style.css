@@ -78,6 +78,10 @@ a {
     outline: none;
   }
 
+.container .input-form input[type="radio"] {
+    display: inline;
+}
+
 label {
     color:  #ff3385;
     font-size: 15px;
@@ -170,3 +174,4 @@ button {
     margin: 10px 4px 10px 4px;
     cursor: pointer;
 }
+ 
