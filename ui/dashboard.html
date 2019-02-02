@@ -13,34 +13,35 @@
 
 <body>
     <header>
-            <nav class="main-nav">
-                <ul>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                </li>
+                <div class="right-nav">
                     <li>
-                        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                        <a href="sign-up.html"><i class="fas fa-user-plus"></i> Sign Up!</a>
                     </li>
-                    <div class="right-nav">
-                        <li>
-                            <a href="sign-up.html"><i class="fas fa-user-plus"></i>  Sign Up!</a>
-                        </li>
-                        </li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
     <div class="sidenav">
         <a href="#" class="tablink" onclick="openLink(event, 'parties')"><i class="fas fa-handshake"></i> Parties</a>
         <a href="#" class="tablink" onclick="openLink(event, 'vote')"><i class="fas fa-vote-yea"></i> Vote!</a>
         <a href="#" class="tablink" onclick="openLink(event, 'offices')"><i class="fas fa-landmark"></i> Elective Posts</a>
-        <a href="#" class="tablink" onclick="openLink(event, 'politicians')"><i class="fas fa-user-secret"></i> Politicians</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'politicians')"><i class="fas fa-user-secret"></i>
+            Politicians</a>
         <a href="#" class="tablink" onclick="openLink(event, 'results')"><i class="fas fa-poll"></i> Results</a>
         <a href="#" class="tablink" onclick="openLink(event, 'voters')"><i class="fas fa-person-booth"></i> Voters</a>
 
     </div>
-    
+
     <div class="main">
         <div id="parties" class="tab-content">
             <h1>Registered Political Parties</h1>
-            <a href="create-party.html"><button>Create Party</button></a>
+            <a href="create-party.html" style="text-align:left"><button>Create Party</button></a>
             <table>
                 <tr>
                     <th>Party ID</th>
@@ -69,7 +70,7 @@
             </table>
         </div>
         <div id="vote" class="tab-content" style="display:none">
-            <h2>Ballot Booth</h2>
+            <h1>Ballot Booth</h1>
             <div class="container">
                 <div class="custom-select" style="width:200px;">
                     <label>Presidential</label>
@@ -90,15 +91,15 @@
                     </select>
                 </div>
                 <div class="custom-select" style="width:200px;">
-                <label>National Assembly  </label>                                                                                                                                                                                                                                                                                                                                                                                                                            </label>
-                <select>
-                    <option value="0">Choose:</option>
-                    <option value="1">Moh Salah</option>
-                    <option value="2">Titus Bramble</option>
-                    <option value="3">Olivier Giroud</option>
-                </select>
-            </div>
-            <a href="success.html"><button>Submit Votes</button></a>
+                    <label>National Assembly </label> </label>
+                    <select>
+                        <option value="0">Choose:</option>
+                        <option value="1">Moh Salah</option>
+                        <option value="2">Titus Bramble</option>
+                        <option value="3">Olivier Giroud</option>
+                    </select>
+                </div>
+                <a href="success.html"><button>Submit Votes</button></a>
             </div>
         </div>
 
@@ -134,17 +135,17 @@
         </div>
 
         <div id="politicians" class="tab-content" style="display:none">
-            <h1>Politicians</h1>
+            <h1>Self Nomination</h1>
             <div class="container">
                 <p>Express Interest</p>
                 <div class="input-form">
                     <form action="success.html">
                         <input type="radio" name="interest" value="president" id="president">
-                        <label for="president">President</label><br/>
+                        <label for="president">Presidential Office</label><br />
                         <input type="radio" name="interest" value="governor" id="governor">
-                        <label for="governor">Governor</label><br/>
+                        <label for="governor">Gubernatorial Office</label><br />
                         <input type="radio" name="interest" value="mna" id="mna">
-                        <label for="mna">Member of National Assembly</label><br/>
+                        <label for="mna">National Assembly Office</label><br />
                         <input type="submit" value="Submit">
                     </form>
                 </div>
@@ -152,13 +153,13 @@
         </div>
 
         <div id="results" class="tab-content" style="display:none">
-            <h2>Results Link</h2>
+            <h1>Results Link</h1>
         </div>
 
         <div id="voters" class="tab-content" style="display:none">
-            <h2>Voters Link</h2>
+            <h1>Voters Link</h1>
         </div>
-        
+
     </div>
     <div class="footer">
         <p>&copy; 2019 Politico!</p>

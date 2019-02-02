@@ -37,11 +37,11 @@ a {
 }
 
 .bg-img {
-    background-image: url("img/background.png");
+    background-image: url("../img/background.png");
     background-repeat: no-repeat;
     background-position: 600px 100px;
     height: 500px;
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .bg-img p {
