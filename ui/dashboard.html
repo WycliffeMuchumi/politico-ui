@@ -31,10 +31,12 @@
         <a href="#" class="tablink" onclick="openLink(event, 'parties')"><i class="fas fa-handshake"></i> Parties</a>
         <a href="#" class="tablink" onclick="openLink(event, 'vote')"><i class="fas fa-vote-yea"></i> Vote!</a>
         <a href="#" class="tablink" onclick="openLink(event, 'offices')"><i class="fas fa-landmark"></i> Elective Posts</a>
-        <a href="#" class="tablink" onclick="openLink(event, 'nomination')"><i class="fas fa-thumbs-up"></i> Nominations</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'politicians')"><i class="fas fa-user-secret"></i>
+            Politicians</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'nomination')"><i class="fas fa-thumbs-up"></i>
+            Nominations</a>
         <a href="#" class="tablink" onclick="openLink(event, 'results')"><i class="fas fa-poll"></i> Results</a>
         <a href="#" class="tablink" onclick="openLink(event, 'voters')"><i class="fas fa-person-booth"></i> Voters</a>
-
     </div>
 
     <div class="main">
@@ -133,6 +135,44 @@
             </table>
         </div>
 
+
+
+        <div id="politicians" class="tab-content">
+            <h1>Nominated Politicians</h1>
+            <table>
+                <tr>
+                    <th>Politician ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Elective Office</th>
+                    <th>Party</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mit</td>
+                    <td>Romney</td>
+                    <td>President</td>
+                    <td>Democrat</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Donald</td>
+                    <td>Trump</td>
+                    <td>President</td>
+                    <td>Republican</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>George</td>
+                    <td>Washington</td>
+                    <td>President</td>
+                    <td>Libertarian Party</td>
+                </tr>
+            </table>
+        </div>
+
+
+
         <div id="nomination" class="tab-content" style="display:none">
             <h1>Self Nomination</h1>
             <div class="container">
@@ -150,6 +190,8 @@
                 </div>
             </div>
         </div>
+
+
 
         <div id="results" class="tab-content" style="display:none">
             <h1>Results Link</h1>
