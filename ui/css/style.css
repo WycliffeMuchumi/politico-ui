@@ -241,3 +241,15 @@ button {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+.tab-content {
+    display: none;
+}
+
+.tab-content a {
+    text-align: left;
+}
+
+#parties {
+    display: block;
+}
