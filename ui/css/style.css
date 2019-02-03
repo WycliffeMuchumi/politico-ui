@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -180,10 +180,10 @@ button {
     margin-bottom: 40px;
 }
   
-.custom-select select {
+/* .custom-select select {
     display: none; 
 }
-  
+*/
 .select-selected {
     background-color: #ff3385;
 }
@@ -230,4 +230,4 @@ button {
   
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
-}
+} 
