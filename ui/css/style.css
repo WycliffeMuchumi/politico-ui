@@ -9,7 +9,7 @@ body {
 }
 
 .main-nav {
-    background-color: #ff3385;
+    background-color: #ff66a3;
 }
 
 .main-nav ul{
@@ -51,7 +51,7 @@ a {
 .bg-img p {
     font-size: 40px;
     margin-left: 50px;
-    color: #ff3385;
+    color: #ff66a3;
     text-align: center;
 }
 
@@ -60,6 +60,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
   
 .container .input-form {
@@ -68,7 +69,7 @@ a {
   }
 
   .container .input-form a {
-    color: #ff3385;
+    color: #ff66a3;
   }
   
 .container .input-form input {
@@ -77,34 +78,32 @@ a {
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 15px;
-    border: 1px solid #ff3385;
+    border: 1px solid #ff66a3;
     border-radius: 4px;
     outline: none;
+
+    
   }
 
-.container .input-form input[type="radio"] {
-    display: inline;
-}
-
 label {
-    color:  #ff3385;
+    color:  #ff66a3;
     font-size: 15px;
 }
 
 .container .input-form input[type="submit"] {
-    background-color: #ff3385;
-    border: 1px solid #ff3385;
+    background-color: #ff66a3;
+    border: 1px solid #ff66a3;
     color: #ffffff;
 }
 
 .container .input-form input[type="date"] {
-    color: #ff3385;
+    color: #ff66a3;
 }
 
 .container p {
     font-size: 30px;
     margin-left: 25px;
-    color: #ff3385;
+    color: #ff66a3;
     margin-bottom: 0;
 }
 
@@ -113,7 +112,7 @@ label {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #ff3385;
+    background-color: #ff66a3;
     color: white;
     text-align: center;
 }
@@ -125,7 +124,7 @@ label {
     z-index: 1;
     top: 60px;
     left: 0;
-    background-color: #ff3385;
+    background-color: #ff66a3;
     overflow-x: hidden;
 }
   
@@ -151,7 +150,7 @@ label {
 
 .active-link {
     background-color: white;
-    color:#ff3385!important;
+    color:#ff66a3!important;
 }
 
 
@@ -161,14 +160,19 @@ table {
 }
 
 td, th {
-    border: 1px solid #ff3385;
+    border: 1px solid #ff66a3;
     text-align: left;
     padding: 8px;
     font-weight: lighter;
 }
+th {
+    background-color: #ffe6f0;
+    /* color: #ffffff; */
+    /* border: 1px solid white; */
+}
 
 button {
-    background-color: #ff3385;
+    background-color: #ff66a3;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -183,14 +187,15 @@ button {
 .custom-select {
     position: relative;
     margin-bottom: 40px;
+
 }
   
-/* .custom-select select {
-    display: none; 
+.custom-select select {
+    display: none;
 }
-*/
+
 .select-selected {
-    background-color: #ff3385;
+    background-color: #ff66a3;
 }
   
 .select-selected:after {
@@ -222,7 +227,7 @@ button {
   
 .select-items {
     position: absolute;
-    background-color: #ff3385;
+    background-color: #ff66a3;
     top: 100%;
     left: 0;
     right: 0;
@@ -249,7 +254,68 @@ button {
 .tab-content a {
     text-align: left;
 }
+.tab-content p {
+    font-size: 30px;
+    /* margin-left: 25px; */
+    color: #ff66a3;
+    margin-bottom: 20px;
+}
 
 #parties {
     display: block;
+}
+
+.radiocontainer {
+    display: inline-grid;
+    grid-auto-flow: dense;
+    align-items: center;
+    width: 300px;
+  }
+  .radiocontainer input{
+      margin-bottom: 20px;
+  }
+
+.radiocontainer input[type="submit"]{
+    background-color: #ff66a3;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    color: #ffffff;
+}
+.radiocontainer input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.radiocontainer input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color:#ff66a3;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.radiocontainer p {
+    font-size: 30px;
+    color: #ff66a3;
+    margin-bottom: 20px;
+}
+  
+.radiocontainer label {
+    grid-column: 2;
 }
