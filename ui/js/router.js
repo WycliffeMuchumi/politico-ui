@@ -14,27 +14,22 @@ function openLink(evnt, link) {
     evnt.currentTarget.className += " active-link";
 }
 
-var x, i, j, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
+var x, i, j, selectElement, a, b, c;
+
 x = document.getElementsByClassName("custom-select");
+
 for (i = 0; i < x.length; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
-  /*for each element, create a new DIV that will act as the selected item:*/
+  selectElement = x[i].getElementsByTagName("select")[0];
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  a.innerHTML = selectElement.options[selectElement.selectedIndex].innerHTML;
   x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < selElmnt.length; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
+  for (j = 1; j < selectElement.length; j++) {
     c = document.createElement("DIV");
-    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.innerHTML = selectElement.options[j].innerHTML;
     c.addEventListener("click", function(e) {
-        /*when an item is clicked, update the original select box,
-        and the selected item:*/
         var y, i, k, s, h;
         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
         h = this.parentNode.previousSibling;
@@ -56,8 +51,6 @@ for (i = 0; i < x.length; i++) {
   }
   x[i].appendChild(b);
   a.addEventListener("click", function(e) {
-      /*when the select box is clicked, close any other select boxes,
-      and open/close the current select box:*/
       e.stopPropagation();
       closeAllSelect(this);
       this.nextSibling.classList.toggle("select-hide");
@@ -65,8 +58,6 @@ for (i = 0; i < x.length; i++) {
     });
 }
 function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
   var x, y, i, arrNo = [];
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-selected");
@@ -83,6 +74,4 @@ function closeAllSelect(elmnt) {
     }
   }
 }
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);

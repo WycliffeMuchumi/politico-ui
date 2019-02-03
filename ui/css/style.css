@@ -96,8 +96,33 @@ label {
     color: #ffffff;
 }
 
-.container .input-form input[type="date"] {
-    color: #ff66a3;
+.container .input-form input[type="file"] {
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 24px;
+    width: 100%;
+    
+}
+.upload {
+    padding:5px 10px;
+    background:#ff66a3;
+    border:1px solid #ff66a3;
+    position:relative;
+    color:#fff;
+    border-radius:2px;
+    text-align:center;
+    float:left;
+    cursor:pointer;
+    margin-bottom: 20px;
+} 
+
+.upload label {
+    color: #ffffff;
 }
 
 .container p {
@@ -140,7 +165,6 @@ label {
     color: #f1f1f1;
 }
 
-  
 .main {
     margin-top: 20px;
     margin-left: 220px;
@@ -167,8 +191,6 @@ td, th {
 }
 th {
     background-color: #ffe6f0;
-    /* color: #ffffff; */
-    /* border: 1px solid white; */
 }
 
 button {
@@ -256,7 +278,6 @@ button {
 }
 .tab-content p {
     font-size: 30px;
-    /* margin-left: 25px; */
     color: #ff66a3;
     margin-bottom: 20px;
 }
