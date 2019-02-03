@@ -31,7 +31,7 @@
     <div class="sidenav">
         <a href="#" class="tablink" onclick="openLink(event, 'parties')"><i class="fas fa-handshake"></i> Parties</a>
         <a href="#" class="tablink" onclick="openLink(event, 'vote')"><i class="fas fa-vote-yea"></i> Vote!</a>
-        <a href="#" class="tablink" onclick="openLink(event, 'offices')"><i class="fas fa-landmark"></i> Elective Posts</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'offices')"><i class="fas fa-landmark"></i> Elective Offices</a>
         <a href="#" class="tablink" onclick="openLink(event, 'politicians')"><i class="fas fa-user-secret"></i>
             Politicians</a>
         <a href="#" class="tablink" onclick="openLink(event, 'nomination')"><i class="fas fa-thumbs-up"></i>
@@ -72,7 +72,8 @@
         </div>
         <div id="vote" class="tab-content">
             <h1>Ballot Booth</h1>
-            <div class="container">
+            <p>Vote for your favourite Candidate here</p>
+            <div class="radiocontainer">
                 <div class="custom-select">
                     <label>Presidential</label>
                     <select>
@@ -100,7 +101,7 @@
                         <option value="3">Olivier Giroud</option>
                     </select>
                 </div>
-                <a href="success.html"><button>Submit Votes</button></a>
+                <a href="user-profile.html"><button>Submit Votes</button></a>
             </div>
         </div>
 
@@ -137,6 +138,7 @@
 
         <div id="politicians" class="tab-content" style="display:none">
             <h1>Nominated Politicians</h1>
+            <p>Presidential Nominees</p>
             <table>
                 <tr>
                     <th>Politician ID</th>
@@ -171,11 +173,83 @@
                     <td>Libertarian Party</td>
                 </tr>
             </table>
+            <p>Gubernatorial Nominees</p>
+            <table>
+                <tr>
+                    <th>Politician ID</th>
+                    <th>Avatar</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Elective Office</th>
+                    <th>Party</th>
+                </tr>
+                
+                <tr>
+                    <td>1</td>
+                    <td><img src="img/avatars/man.png" alt="Wayne Rooney"></td>
+                    <td>Wayne</td>
+                    <td>Rooney</td>
+                    <td>Gubernatorial</td>
+                    <td>Republican</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="img/avatars/woman.png" alt="Mariah Carey"></td>
+                    <td>Mariah</td>
+                    <td>Carey</td>
+                    <td>Gubernatorial</td>
+                    <td>Democrat</td>
+                    </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="img/avatars/man.png" alt="George Washington"></td>
+                    <td>Michael</td>
+                    <td>Bolton</td>
+                    <td>Gubernatorial</td>
+                    <td>Libertarian</td>
+                </tr>
+            </table>
+            <p>National Assembly Nominees</p>
+            <table>
+                <tr>
+                    <th>Politician ID</th>
+                    <th>Avatar</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Elective Office</th>
+                    <th>Party</th>
+                </tr>
+                
+                <tr>
+                    <td>1</td>
+                    <td><img src="img/avatars/man.png" alt="Mo Salah"></td>
+                    <td>Mo</td>
+                    <td>Salah</td>
+                    <td>National Assembly</td>
+                    <td>Republican</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="img/avatars/man.png" alt="Titus Bramble"></td>
+                    <td>Titus</td>
+                    <td>Bramble</td>
+                    <td>National Assembly</td>
+                    <td>Democrat</td>
+                    </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="img/avatars/man.png" alt="Olivier Giroud"></td>
+                    <td>Olivier</td>
+                    <td>Giroud</td>
+                    <td>National Assembly</td>
+                    <td>Libertarian</td>
+                </tr>
+            </table>
         </div>
 
         <div id="nomination" class="tab-content" style="display:none">
             <h1>Self Nomination</h1>
-            <div class="container">
+            <div class="radiocontainer">
                 <p>Express Interest</p>
                 <div class="input-form">
                     <form action="success.html">
@@ -193,108 +267,132 @@
 
         <div id="results" class="tab-content" style="display:none">
             <h1>Election Results</h1>
-            <h2>Presidential Results</h2>
+            <p>Presidential Results</p>
             <table>
                 <tr>
                     <th>Politician ID</th>
+                    <th>Avatar</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Elective Office</th>
                     <th>Party</th>
+                    <th>Party Logo</th>
                     <th>Votes</th>
                 </tr>
                 <tr>
                     <td>1</td>
+                    <td><img src="img/avatars/man.png" alt="Mit Romney">
                     <td>Mit</td>
                     <td>Romney</td>
                     <td>President</td>
                     <td>Democrat</td>
-                    <th>2000</th>
+                    <td><img src="img/logos/donkey.jpg" alt="Democrat"></td>
+                    <td>2000</td>
                 </tr>
                 <tr>
                     <td>2</td>
+                    <td><img src="img/avatars/man.png" alt="Donald Trump">
                     <td>Donald</td>
                     <td>Trump</td>
                     <td>President</td>
                     <td>Republican</td>
+                    <td><img src="img/logos/elephant.jpg" alt="Republican"></td>
                     <td>3000</td>
                 </tr>
                 <tr>
                     <td>3</td>
+                    <td><img src="img/avatars/man.png" alt="George Washington">
                     <td>George</td>
                     <td>Washington</td>
                     <td>President</td>
                     <td>Libertarian</td>
+                    <td><img src="img/logos/cockerel.jpg" alt="Libertarian"></td>
                     <td>1000</td>
                 </tr>
             </table>
-            <h2>Gubernatorial Results</h2>
+            <p>Gubernatorial Results</p>
             <table>
                 <tr>
                     <th>Politician ID</th>
+                    <th>Avatar</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Elective Office</th>
                     <th>Party</th>
+                    <th>Party Logo</th>
                     <th>Votes</th>
                 </tr>
                 <tr>
                     <td>4</td>
+                    <td><img src="img/avatars/woman.png" alt="Mariah Carey">
                     <td>Mariah</td>
                     <td>Carey</td>
                     <td>Governor</td>
                     <td>Democrat</td>
-                    <th>800</th>
+                    <td><img src="img/logos/donkey.jpg" alt="Democrat"></td>
+                    <td>800</td>
                 </tr>
                 <tr>
                     <td>5</td>
+                    <td><img src="img/avatars/man.png" alt="Wayne Rooney">
                     <td>Wayne</td>
                     <td>Rooney</td>
                     <td>Governor</td>
                     <td>Libertarian</td>
+                    <td><img src="img/logos/cockerel.jpg" alt="Libertarian"></td>
                     <td>600</td>
                 </tr>
                 <tr>
                     <td>6</td>
+                    <td><img src="img/avatars/man.png" alt="Michael Bolton">
                     <td>Michael</td>
                     <td>Bolton</td>
                     <td>Governor</td>
                     <td>Republican Party</td>
+                    <td><img src="img/logos/elephant.jpg" alt="Republican"></td>
                     <td>115</td>
                 </tr>
             </table>
-            <h2>Parliamentary Results</h2>
+            <p>Parliamentary Results</p>
             <table>
                 <tr>
                     <th>Politician ID</th>
+                    <th>Avatar</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Elective Office</th>
                     <th>Party</th>
+                    <th>Party Logo</th>
                     <th>Votes</th>
                 </tr>
                 <tr>
                     <td>7</td>
+                    <td><img src="img/avatars/man.png" alt="Titus Bramble">
                     <td>Titus</td>
                     <td>Bramble</td>
                     <td>Parliamentary</td>
                     <td>Libertarian</td>
-                    <th>300</th>
+                    <td><img src="img/logos/cockerel.jpg" alt="Libertarian"></td>
+                    <td>300</td>
                 </tr>
                 <tr>
                     <td>8</td>
+                    <td><img src="img/avatars/man.png" alt="Moh Salah">
                     <td>Moh</td>
                     <td>Salah</td>
                     <td>Parliamentary</td>
                     <td>Republican</td>
+                    <td><img src="img/logos/elephant.jpg" alt="Republican"></td>
                     <td>80</td>
                 </tr>
                 <tr>
                     <td>9</td>
+                    <td><img src="img/avatars/man.png" alt="Olivier Giroud">
                     <td>Olivier</td>
                     <td>Giroud</td>
                     <td>Parliamentary</td>
                     <td>Democrat</td>
+                    <td><img src="img/logos/donkey.jpg" alt="Democrat"></td>
                     <td>5</td>
                 </tr>
             </table>
