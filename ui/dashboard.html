@@ -37,7 +37,6 @@
         <a href="#" class="tablink" onclick="openLink(event, 'nomination')"><i class="fas fa-thumbs-up"></i>
             Nominations</a>
         <a href="#" class="tablink" onclick="openLink(event, 'results')"><i class="fas fa-poll"></i> Results</a>
-        <a href="#" class="tablink" onclick="openLink(event, 'voters')"><i class="fas fa-person-booth"></i> Voters</a>
     </div>
 
     <div class="main">
@@ -48,25 +47,25 @@
                 <tr>
                     <th>Party ID</th>
                     <th>Party Name</th>
-                    <th>Party Symbol</th>
+                    <th>Party Logo</th>
                     <th>Manage</th>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>Democrat</td>
-                    <td>Donkey</td>
+                    <td><img src="img/logos/donkey.jpg" alt="Donkey"></td>
                     <td><a href="edit-party.html"><button>Edit</button></a><a href="success.html"><button>Delete</button></a></td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Republican</td>
-                    <td>Elephant</td>
+                    <td><img src="img/logos/elephant.jpg" alt="Elephant"></td>
                     <td><a href="edit-party.html"><button>Edit</button></a></a><a href="success.html"><button>Delete</button></a></td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>Libertarian Party</td>
-                    <td>Porcupine</td>
+                    <td><img src="img/logos/cockerel.jpg" alt="Cockerel"></td>
                     <td><a href="edit-party.html"><button>Edit</button></a></a><a href="success.html"><button>Delete</button></a></td>
                 </tr>
             </table>
@@ -141,6 +140,7 @@
             <table>
                 <tr>
                     <th>Politician ID</th>
+                    <th>Avatar</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Elective Office</th>
@@ -148,13 +148,15 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>Mit</td>
-                    <td>Romney</td>
+                    <td><img src="img/avatars/woman.png" alt="Mit Romney"></td>
+                    <td>Hillary</td>
+                    <td>Clinton</td>
                     <td>President</td>
                     <td>Democrat</td>
                 </tr>
                 <tr>
                     <td>2</td>
+                    <td><img src="img/avatars/man.png" alt="Donald Trump"></td>
                     <td>Donald</td>
                     <td>Trump</td>
                     <td>President</td>
@@ -162,6 +164,7 @@
                 </tr>
                 <tr>
                     <td>3</td>
+                    <td><img src="img/avatars/man.png" alt="George Washington"></td>
                     <td>George</td>
                     <td>Washington</td>
                     <td>President</td>
@@ -295,10 +298,6 @@
                     <td>5</td>
                 </tr>
             </table>
-        </div>
-
-        <div id="voters" class="tab-content" style="display:none">
-            <h1>Voters Link</h1>
         </div>
 
     </div>
