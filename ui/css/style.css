@@ -32,6 +32,10 @@ body {
     float: right;
 }
 
+.center-nav {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -232,3 +236,8 @@ button {
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
 } 
+
+.profile-page {
+    margin-left: 50px;
+    margin-right: 50px;
+}
