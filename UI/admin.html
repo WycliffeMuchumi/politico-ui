@@ -34,50 +34,22 @@
     </header>
     <div class="sidenav">
         <a href="#" class="tablink" onclick="openLink(event, 'parties')"><i class="fas fa-handshake"></i> Parties</a>
-        <a href="#" class="tablink" onclick="openLink(event, 'offices')"><i class="fas fa-landmark"></i> Offices</a>
+        <!-- <a href="#" class="tablink" onclick="openLink(event, 'offices')"><i class="fas fa-landmark"></i> Offices</a>
         <a href="#" class="tablink" onclick="openLink(event, 'politicians')"><i class="fas fa-user-secret"></i>
             Politicians</a>
         <a href="#" class="tablink" onclick="openLink(event, 'nomination')"><i class="fas fa-thumbs-up"></i>
             Requests</a>
-        <a href="#" class="tablink" onclick="openLink(event, 'results')"><i class="fas fa-poll"></i> Results</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'results')"><i class="fas fa-poll"></i> Results</a> -->
     </div>
 
     <div class="main">
-        <div id="parties" class="tab-content">
+        <div class="tab-content" id="parties">
             <h1>Registered Political Parties</h1>
             <a href="create-party.html"><button>Create Party</button></a>
-            <table>
-                <tr>
-                    <th>Party ID</th>
-                    <th>Party Name</th>
-                    <th>Party Logo</th>
-                    <th>Manage</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Democrat</td>
-                    <td><img src="img/logos/donkey.jpg" alt="Donkey"></td>
-                    <td><a href="edit-party.html"><button>Edit</button></a><a
-                            href="success.html"><button>Delete</button></a></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Republican</td>
-                    <td><img src="img/logos/elephant.jpg" alt="Elephant"></td>
-                    <td><a href="edit-party.html"><button>Edit</button></a></a><a
-                            href="success.html"><button>Delete</button></a></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Libertarian Party</td>
-                    <td><img src="img/logos/cockerel.jpg" alt="Cockerel"></td>
-                    <td><a href="edit-party.html"><button>Edit</button></a></a><a
-                            href="success.html"><button>Delete</button></a></td>
-                </tr>
-            </table>
+            <table id="parties_table"></table>
         </div>
 
-        <div id="offices" class="tab-content" style="display:none">
+        <!-- <div id="offices" class="tab-content" style="display:none">
             <h1>Elective Offices</h1>
             <a href="create-office.html"><button>Create Office</button></a>
             <table>
@@ -464,7 +436,7 @@
                     <td>5</td>
                 </tr>
             </table>
-        </div>
+        </div> -->
 
     </div>
     <div class="footer">
@@ -472,7 +444,6 @@
     </div>
 
     <script src="js/router.js"></script>
-
 </body>
 
 </html>
