@@ -1,4 +1,5 @@
 document.getElementById('signIn').addEventListener('click', userLogin);
+
 function userLogin(e) {
     e.preventDefault();
     let url = 'https://barno-politico-api.herokuapp.com/api/v2/auth/login';
@@ -20,8 +21,9 @@ function userLogin(e) {
     })
         .then(result => result.json().then(data => ({ status: result.status, body: data })))
         .then((result) => {
+            // console.log(result.body.data[0].token)
             if (result.status == 201) {
-                setToken(result)
+                localStorage.token = result.body.data[0].token
                 if (result.body.data[0].user.isAdmin == true) {
                     window.location.href = 'admin.html'
                 } else {
