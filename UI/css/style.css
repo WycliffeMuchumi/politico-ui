@@ -82,12 +82,10 @@ a {
     width: 325px;
     padding: 10px;
     box-sizing: border-box;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ff66a3;
     border-radius: 4px;
     outline: none;
-
-    
   }
 
 label {
@@ -120,7 +118,7 @@ label {
     
 }
 .upload {
-    padding:5px 10px;
+    padding:5px 5px;
     background:#ff66a3;
     border:1px solid #ff66a3;
     position:relative;
