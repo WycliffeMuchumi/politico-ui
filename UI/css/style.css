@@ -32,6 +32,12 @@ body {
     float: right;
 }
 
+.middle{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 35%;
+}
 .center-nav {
     text-align: center;
 }
