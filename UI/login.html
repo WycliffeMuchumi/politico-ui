@@ -27,15 +27,17 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
+    <div class="container login">
+
         <p>Sign In</p>
         <div class="input-form">
-            <form action="dashboard.html">
+            <div id="error-display"></div>
+            <form>
                 <label for="email_address">Email Address</label>
                 <input type="email" name="email_address" id="email_address">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password">
-                <input type="submit" value="Sign In">
+                <input type="submit" value="Sign In" id="signIn">
             </form>
             <a href="password-reset.html"><i class="fas fa-sync"></i> Reset password</a></span>
         </div>
@@ -43,6 +45,8 @@
     <div class="footer">
         <p>&copy; 2019 Politico!</p>
     </div>
+    <script src="js/login.js"></script>
+    <script src="js/base.js"></script>
 </body>
 
 </html>
