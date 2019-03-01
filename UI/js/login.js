@@ -22,7 +22,11 @@ function userLogin(e) {
         .then((result) => {
             if (result.status == 201) {
                 setToken(result)
-                window.location.href = 'dashboard.html'
+                if (result.body.data[0].user.isAdmin == true) {
+                    window.location.href = 'admin.html'
+                } else {
+                    window.location.href = 'dashboard.html'
+                }
             } else if (result.status == 400) {
                 document.getElementById('error-display').innerHTML = result.body.message + "!"
                 document.getElementById('error-display').style.display = "block"
