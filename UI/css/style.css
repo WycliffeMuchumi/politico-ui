@@ -82,13 +82,10 @@ a {
     width: 325px;
     padding: 10px;
     box-sizing: border-box;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ff66a3;
     border-radius: 4px;
     outline: none;
-
-    
-
   }
 
 label {
@@ -102,10 +99,24 @@ label {
     color: #ffffff;
 }
 
-.container .input-form #error-display {
-    color: red;
-    /* margin-bottom: 20px; */
+.container .input-form #success-display {
+    color: #00b33c;
     font-weight:800;
+    background-color: #e6ffee;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.container .input-form #error-display {
+    color: #ff0000;
+    font-weight:800;
+    background-color: #ffe6e6;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 4px;
+    display: none;
 }
 
 .container .input-form input[type="file"] {
@@ -121,8 +132,7 @@ label {
     
 }
 .upload {
-    padding:5px 10px;
-
+    padding:5px 5px;
     background:#ff66a3;
     border:1px solid #ff66a3;
     position:relative;
@@ -144,13 +154,6 @@ label {
     color: #ff66a3;
     margin-bottom: 0;
 }
-
-/* header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-} */
 
 .footer {
     position: fixed;
