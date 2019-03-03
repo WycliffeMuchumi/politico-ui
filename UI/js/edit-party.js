@@ -37,6 +37,9 @@ function editParty() {
             else {
                 document.getElementById('error-display').innerHTML = result.body.message + "!"
                 document.getElementById('error-display').style.display = "block"
+                setTimeout(function () {
+                    document.getElementById('error-display').style.display = "none"
+                }, 2000);
             }
         })
 }
