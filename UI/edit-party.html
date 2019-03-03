@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Edit Party</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,18 +24,23 @@
     <div class="container">
         <p>Edit Party Details</p>
         <div class="input-form">
-            <form action="success.html">
-                <label for="party_name">Party Name</label>
-                <input type="text" name="party_name" id="party_name">
-                <label for="party_symbol">Party Symbol</label>
-                <input type="text" name="party_symbol" id="party_symbol">
-                <input type="submit" value="Okay, Submit!">
+            <div id="error-display"></div>
+            <div id="success-display"></div>
+            <form >
+                <label for="name">Party Name</label>
+                <input type="text" name="name" id="name">
+                <label for="hqaddress">Party HeadQuarters</label>
+                <input type="text" name="hqaddress" id="hqaddress">
+                <label for="logourl">Logo URL</label>
+                <input type="url" name="logourl" id="logourl">
+                <input type="submit" value="Submit" id="editParty">
             </form>
         </div>
     </div>
     <div class="footer">
         <p>&copy; 2019 Politico!</p>
     </div>
+    <script src="js/edit-party.js"></script>
 </body>
 
 </html>

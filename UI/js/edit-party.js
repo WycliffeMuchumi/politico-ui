@@ -1,16 +1,16 @@
-let create = document.getElementById('create_party');
-if (create) {
-    create.addEventListener('click', createParty);
+window.onload = loadParties
+let edit = document.getElementById('editParty');
+if (edit) {
+    edit.addEventListener('click', editParty);
 }
-function createParty(e) {
-    e.preventDefault();
 
-    let name = document.getElementById('name').value;
-    let hqaddress = document.getElementById('hqaddress').value;
-    let logourl = document.getElementById('logourl').value;
-
-    fetch('https://barno-politico-api.herokuapp.com/api/v2/parties', {
-        method: 'POST',
+function editParty() {
+    let name = document.getElementById('name').value
+    let hqaddress = document.getElementById('hqaddress').value
+    let logourl = document.getElementById('logourl').value
+    let url = 'https://barno-politico-api.herokuapp.com/api/v2/parties/' + localStorage.id + '/' + localStorage.name
+    fetch(url, {
+        method: 'PATCH',
         headers: new Headers({
             'Accept': 'application/json',
             'Content-type': 'application/json',
@@ -24,13 +24,25 @@ function createParty(e) {
             if (result.status == 201) {
                 document.getElementById('success-display').innerHTML = result.body.message + "!"
                 document.getElementById('success-display').style.display = "block"
+                setTimeout(function () {
+                    window.location.replace("admin.html")
+                }, 2000);
             } else if (result.status == 400) {
                 document.getElementById('error-display').innerHTML = result.body.message + "!"
                 document.getElementById('error-display').style.display = "block"
+                setTimeout(function () {
+                    document.getElementById('error-display').style.display = "none"
+                }, 2000);
             }
             else {
                 document.getElementById('error-display').innerHTML = result.body.message + "!"
                 document.getElementById('error-display').style.display = "block"
             }
         })
+}
+
+function loadParties() {
+    document.getElementById('name').value = localStorage.name;
+    document.getElementById('logourl').value = localStorage.logourl;
+    document.getElementById('hqaddress').value = localStorage.hqaddress;
 }
