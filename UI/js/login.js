@@ -21,7 +21,6 @@ function userLogin(e) {
     })
         .then(result => result.json().then(data => ({ status: result.status, body: data })))
         .then((result) => {
-            // console.log(result.body.data[0].token)
             if (result.status == 201) {
                 localStorage.token = result.body.data[0].token
                 if (result.body.data[0].user.isAdmin == true) {
@@ -32,11 +31,16 @@ function userLogin(e) {
             } else if (result.status == 400) {
                 document.getElementById('error-display').innerHTML = result.body.message + "!"
                 document.getElementById('error-display').style.display = "block"
+                setTimeout(function () {
+                    document.getElementById('error-display').style.display = "none"
+                }, 2000);
             }
-
             else {
                 document.getElementById('error-display').innerHTML = result.body.message + "!"
                 document.getElementById('error-display').style.display = "block"
+                setTimeout(function () {
+                    document.getElementById('error-display').style.display = "none"
+                }, 2000);
             }
 
         })
