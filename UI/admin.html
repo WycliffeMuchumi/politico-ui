@@ -15,27 +15,18 @@
     <header>
         <nav class="main-nav">
             <ul>
-                <li>
-                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-                </li>
-
-
+                <li><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
                 <li class="middle">Administrator Dashboard</li>
-
-
                 <div class="right-nav">
-                    <li>
-                        <a href="user-profile.html"><i class="fas fa-user"></i> User</a>
-                    </li>
-                    </li>
+                    <li><a href="user-profile.html"><i class="fas fa-user"></i> User</a></li>
                 </div>
             </ul>
         </nav>
     </header>
     <div class="sidenav">
         <a href="#" class="tablink" onclick="openLink(event, 'parties')"><i class="fas fa-handshake"></i> Parties</a>
-        <!-- <a href="#" class="tablink" onclick="openLink(event, 'offices')"><i class="fas fa-landmark"></i> Offices</a>
-        <a href="#" class="tablink" onclick="openLink(event, 'politicians')"><i class="fas fa-user-secret"></i>
+        <a href="#" class="tablink" onclick="openLink(event, 'offices')"><i class="fas fa-landmark"></i> Offices</a>
+        <!-- <a href="#" class="tablink" onclick="openLink(event, 'politicians')"><i class="fas fa-user-secret"></i>
             Politicians</a>
         <a href="#" class="tablink" onclick="openLink(event, 'nomination')"><i class="fas fa-thumbs-up"></i>
             Requests</a>
@@ -48,11 +39,11 @@
             <table id="parties_table"></table>
         </div>
 
-        <!-- <div id="offices" class="tab-content" style="display:none">
+        <div id="offices" class="tab-content" style="display:none">
             <h1>Elective Offices</h1>
             <a href="create-office.html"><button>Create Office</button></a>
-            <table>
-                <tr>
+            <table id="offices_table">
+                <!-- <tr>
                     <th>Office ID</th>
                     <th>Office Name</th>
                     <th>Description</th>
@@ -78,11 +69,11 @@
                     <td>This is the representative of a Constituency at the National Assembly</td>
                     <td><a href="edit-party.html"><button>Edit</button></a><a
                             href="success.html"><button>Delete</button></a></td>
-                </tr>
+                </tr> -->
             </table>
         </div>
 
-        <div id="politicians" class="tab-content" style="display:none">
+        <!-- <div id="politicians" class="tab-content" style="display:none">
             <h1>Nominated Politicians</h1>
             <p>Presidential Nominees</p>
             <table>
@@ -444,6 +435,7 @@
     <script src="js/edit-party.js"></script>
     <script src="js/parties.js"></script>
     <script src="js/router.js"></script>
+    <script src="js/create_office.js"></script>
 </body>
 
 </html>
