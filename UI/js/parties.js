@@ -1,5 +1,5 @@
-window.onload = function getParties() {
-
+document.getElementById("loadParties").addEventListener('click', getParties)
+function getParties() {
     fetch('https://barno-politico-api.herokuapp.com/api/v2/parties', {
         method: 'GET',
         headers: new Headers({
