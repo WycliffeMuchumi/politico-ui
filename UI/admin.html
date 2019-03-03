@@ -24,8 +24,12 @@
         </nav>
     </header>
     <div class="sidenav">
-        <a href="#" class="tablink" onclick="openLink(event, 'parties')"><i class="fas fa-handshake"></i> Parties</a>
-        <a href="#" class="tablink" onclick="openLink(event, 'offices')"><i class="fas fa-landmark"></i> Offices</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'parties')" id="loadParties"><i
+                class="fas fa-handshake"></i>
+            Parties</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'offices')" id="loadOffices"><i
+                class="fas fa-landmark"></i>
+            Offices</a>
         <!-- <a href="#" class="tablink" onclick="openLink(event, 'politicians')"><i class="fas fa-user-secret"></i>
             Politicians</a>
         <a href="#" class="tablink" onclick="openLink(event, 'nomination')"><i class="fas fa-thumbs-up"></i>
@@ -40,37 +44,8 @@
         </div>
 
         <div id="offices" class="tab-content" style="display:none">
-            <h1>Elective Offices</h1>
             <a href="create-office.html"><button>Create Office</button></a>
-            <table id="offices_table">
-                <!-- <tr>
-                    <th>Office ID</th>
-                    <th>Office Name</th>
-                    <th>Description</th>
-                    <th>Manage</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>President</td>
-                    <td>This is the Leader of Government and the Head of State</td>
-                    <td><a href="edit-party.html"><button>Edit</button></a><a
-                            href="success.html"><button>Delete</button></a></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Governor</td>
-                    <td>This is the Leader of County Government, which is a devolved unit of Governance</td>
-                    <td><a href="edit-party.html"><button>Edit</button></a><a
-                            href="success.html"><button>Delete</button></a></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Member of National Assembly</td>
-                    <td>This is the representative of a Constituency at the National Assembly</td>
-                    <td><a href="edit-party.html"><button>Edit</button></a><a
-                            href="success.html"><button>Delete</button></a></td>
-                </tr> -->
-            </table>
+            <table id="offices_table"></table>
         </div>
 
         <!-- <div id="politicians" class="tab-content" style="display:none">
@@ -432,10 +407,14 @@
     <div class="footer">
         <p>&copy; 2019 Politico!</p>
     </div>
-    <script src="js/edit-party.js"></script>
+    <!-- <script src="js/edit-party.js"></script> -->
     <script src="js/parties.js"></script>
     <script src="js/router.js"></script>
-    <script src="js/create_office.js"></script>
+    <script src="js/offices.js"></script>
+
+    <!-- <script>
+        
+    </script> -->
 </body>
 
 </html>
