@@ -35,11 +35,10 @@ function userSignUp(e) {
         .then(result => result.json().then(data => ({ status: result.status, body: data })))
         .then((result) => {
             if (result.status == 201) {
-                setToken(result)
                 document.getElementById('success-display').innerHTML = result.body.message + "!"
                 document.getElementById('success-display').style.display = "block"
                 setTimeout(function () {
-                    window.location.replace("login.html")
+                    window.location.href = 'login.html'
                 }, 2000);
             } else if (result.status == 400) {
                 document.getElementById('error-display').innerHTML = result.body.message + "!"
@@ -52,6 +51,5 @@ function userSignUp(e) {
                 document.getElementById('error-display').innerHTML = result.body.message + "!"
                 document.getElementById('error-display').style.display = "block"
             }
-
         })
 }

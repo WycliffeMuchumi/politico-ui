@@ -12,8 +12,9 @@ window.onload = function getParties() {
         .then((result) => {
             let parties = result['data'];
             let parties_table = document.getElementById('parties_table');
-            th =
-                `<tr>
+            if (localStorage.isAdmin == 'true') {
+                th =
+                    `<tr>
                     <th>Party ID</th>
                     <th>Party Name</th>
                     <th>Party HeadQuarters</th>
@@ -21,17 +22,37 @@ window.onload = function getParties() {
                     <th>Date Created</th>
                     <th>Action</th>
                  </tr> `
-            parties_table.innerHTML = th
-            parties.forEach(party => {
-                parties_table.innerHTML += '<tr>' +
-                    '<td>' + party.id + '</td>' +
-                    '<td>' + party.name + '</td>' +
-                    '<td>' + party.hqaddress + '</td>' +
-                    '<td><img src=' + party.logourl + '></td>' +
-                    '<td>' + party.dateCreated + '</td>' +
-                    '<td><button id="' + party.id + '" onclick="getParty(this.id)">Edit</button><button id="' + party.id + '" onclick="deleteParty(this.id)">Delete</button></td>' +
-                    '</tr>';
-            })
+                parties_table.innerHTML = th
+                parties.forEach(party => {
+                    parties_table.innerHTML += '<tr>' +
+                        '<td>' + party.id + '</td>' +
+                        '<td>' + party.name + '</td>' +
+                        '<td>' + party.hqaddress + '</td>' +
+                        '<td><img src=' + party.logourl + '></td>' +
+                        '<td>' + party.dateCreated + '</td>' +
+                        '<td><button id="' + party.id + '" onclick="getParty(this.id)">Edit</button><button id="' + party.id + '" onclick="deleteParty(this.id)">Delete</button></td>' +
+                        '</tr>';
+                })
+            } else {
+                th =
+                    `<tr>
+                    <th>Party ID</th>
+                    <th>Party Name</th>
+                    <th>Party HeadQuarters</th>
+                    <th>Party Logo</th>
+                    <th>Date Created</th>
+                 </tr> `
+                parties_table.innerHTML = th
+                parties.forEach(party => {
+                    parties_table.innerHTML += '<tr>' +
+                        '<td>' + party.id + '</td>' +
+                        '<td>' + party.name + '</td>' +
+                        '<td>' + party.hqaddress + '</td>' +
+                        '<td><img src=' + party.logourl + '></td>' +
+                        '<td>' + party.dateCreated + '</td>' +
+                        '</tr>';
+                })
+            }
         })
 }
 

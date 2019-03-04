@@ -24,9 +24,11 @@ function userLogin(e) {
             if (result.status == 201) {
                 localStorage.token = result.body.data[0].token
                 if (result.body.data[0].user.isAdmin == true) {
+                    localStorage.isAdmin = new Boolean(true)
                     window.location.href = 'admin.html'
                 } else {
-                    window.location.href = 'dashboard.html'
+                    localStorage.isAdmin = new Boolean(false)
+                    window.location.href = 'user.html'
                 }
             } else if (result.status == 400) {
                 document.getElementById('error-display').innerHTML = result.body.message + "!"
