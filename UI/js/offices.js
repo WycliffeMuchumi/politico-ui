@@ -11,7 +11,6 @@ function getOffices() {
     })
         .then(response => response.json())
         .then((result) => {
-            console.log(result)
             let offices = result['data'];
             let offices_table = document.getElementById('offices_table');
             th =
