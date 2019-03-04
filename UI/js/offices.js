@@ -16,18 +16,18 @@ function getOffices() {
             let offices_table = document.getElementById('offices_table');
             th =
                 `<tr>
-                    <th>Office ID</th>
-                    <th>Ofice Name</th>
-                    <th>Office Type</th>
-                    <th>Action</th>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>Office</th>
+                    <th>Date Created</th>
                  </tr> `
             offices_table.innerHTML = th
             offices.forEach(office => {
                 offices_table.innerHTML += '<tr>' +
                     '<td>' + office.id + '</td>' +
-                    '<td>' + office.name + '</td>' +
                     '<td>' + office.officeType + '</td>' +
-                    '<td><button>Edit</button><button>Delete</button></td>' +
+                    '<td>' + office.name + '</td>' +
+                    '<td>' + office.dateCreated + '</td>' +
                     '</tr>';
             })
         })

@@ -18,6 +18,7 @@ window.onload = function getParties() {
                     <th>Party Name</th>
                     <th>Party HeadQuarters</th>
                     <th>Party Logo</th>
+                    <th>Date Created</th>
                     <th>Action</th>
                  </tr> `
             parties_table.innerHTML = th
@@ -27,6 +28,7 @@ window.onload = function getParties() {
                     '<td>' + party.name + '</td>' +
                     '<td>' + party.hqaddress + '</td>' +
                     '<td><img src=' + party.logourl + '></td>' +
+                    '<td>' + party.dateCreated + '</td>' +
                     '<td><button id="' + party.id + '" onclick="getParty(this.id)">Edit</button><button id="' + party.id + '" onclick="deleteParty(this.id)">Delete</button></td>' +
                     '</tr>';
             })
