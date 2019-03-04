@@ -33,16 +33,23 @@
         <a href="#" class="tablink" onclick="openLink(event, 'parties')" id="loadParties"><i
                 class="fas fa-handshake"></i>
             Parties</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'offices')" id="loadOffices"><i
+                class="fas fa-landmark"></i>
+            Offices</a>
     </div>
 
     <div class="main">
         <div class="tab-content" id="parties">
             <table id="parties_table"></table>
         </div>
+        <div id="offices" class="tab-content" style="display:none">
+            <table id="offices_table"></table>
+        </div>
     </div>
     <div class="footer">
         <p>&copy; 2019 Politico!</p>
     </div>
+    <script src="js/offices.js"></script>
     <script src="js/parties.js"></script>
     <script src="js/router.js"></script>
 </body>
