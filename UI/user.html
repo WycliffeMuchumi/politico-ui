@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                </li>
+                <li class="middle">Dashboard</li>
+
+                <div class="right-nav">
+                    <li>
+                        <a href="user-profile.html"><i class="fas fa-user"></i> User</a>
+                    </li>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="sidenav">
+        <a href="#" class="tablink" onclick="openLink(event, 'parties')" id="loadParties"><i
+                class="fas fa-handshake"></i>
+            Parties</a>
+    </div>
+
+    <div class="main">
+        <div class="tab-content" id="parties">
+            <table id="parties_table"></table>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2019 Politico!</p>
+    </div>
+    <script src="js/parties.js"></script>
+    <script src="js/router.js"></script>
+</body>
+
+</html>
