@@ -10,8 +10,8 @@ function getOffices() {
         })
     })
         .then(response => response.json())
-        .then((result) => {
-            let offices = result['data'];
+        .then((response) => {
+            let offices = response['data'];
             let offices_table = document.getElementById('offices_table');
             th =
                 `<tr>
