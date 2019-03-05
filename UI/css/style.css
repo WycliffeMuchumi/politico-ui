@@ -79,7 +79,7 @@ a {
     padding: 20px;
   }
 
-  .container .input-form a {
+.container .input-form a {
     color: #ff66a3;
   }
   
@@ -109,6 +109,26 @@ label {
     color: #00b33c;
     font-weight:800;
     background-color: #e6ffee;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#success-display {
+    color: #00b33c;
+    font-weight:800;
+    background-color: #e6ffee;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#error-display {
+    color: #ff0000;
+    font-weight:800;
+    background-color: #ffe6e6;
     text-align: center;
     padding: 10px 10px;
     border-radius: 4px;
@@ -234,65 +254,6 @@ button {
     margin: 10px 4px 10px 4px;
     cursor: pointer;
 }
-
-.custom-select {
-    position: relative;
-    margin-bottom: 40px;
-
-}
-  
-.custom-select select {
-    display: none;
-}
-
-.select-selected {
-    background-color: #ff66a3;
-}
-  
-.select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-}
-  
-  
-.select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-}
-
-.select-items div,.select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-    user-select: none;
-}
-  
-  
-.select-items {
-    position: absolute;
-    background-color: #ff66a3;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-}
-  
-.select-hide {
-    display: none;
-}
-  
-.select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-} 
-
 .profile-page {
     margin-left: 50px;
     margin-right: 50px;
@@ -321,6 +282,10 @@ button {
     align-items: center;
     width: 300px;
   }
+
+.radiocontainer select {
+    background-color: #ff66a3;
+}
   .radiocontainer input{
       margin-bottom: 20px;
   }
@@ -369,3 +334,15 @@ button {
 .radiocontainer label {
     grid-column: 2;
 }
+
+select {
+    -webkit-appearance: none;
+    width: 250px;
+    background-color: #ff66a3;
+    color: white;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  }

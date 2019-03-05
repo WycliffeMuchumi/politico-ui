@@ -36,6 +36,9 @@
         <a href="#" class="tablink" onclick="openLink(event, 'offices')" id="loadOffices"><i
                 class="fas fa-landmark"></i>
             Offices</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'nomination')" id="loadOptions"><i
+                class="fas fa-thumbs-up"></i>
+            Nominations</a>
     </div>
 
     <div class="main">
@@ -45,13 +48,29 @@
         <div id="offices" class="tab-content" style="display:none">
             <table id="offices_table"></table>
         </div>
-    </div>
-    <div class="footer">
-        <p>&copy; 2019 Politico!</p>
-    </div>
-    <script src="js/offices.js"></script>
-    <script src="js/parties.js"></script>
-    <script src="js/router.js"></script>
+        <div id="nomination" class="tab-content">
+            <div class="input-form">
+                <div id="error-display"></div>
+                <div id="success-display"></div>
+                <form id="expressInterest">
+                    <select id="officeOptions">
+                        <option value="0">Choose Office</option>
+                    </select>
+                    <select id="partyOptions">
+                        <option value="0">Choose Party</option>
+                    </select> <br><br>
+                    <input type="submit" value="Submit Interest">
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2019 Politico!</p>
+        </div>
+        <script src="js/express_interest.js"></script>
+        <script src="js/options.js"></script>
+        <script src="js/offices.js"></script>
+        <script src="js/parties.js"></script>
+        <script src="js/router.js"></script>
 </body>
 
 </html>

@@ -19,26 +19,27 @@ function userLogin(e) {
         },
         body: JSON.stringify({ email: email, password: password }),
     })
-        .then(result => result.json().then(data => ({ status: result.status, body: data })))
-        .then((result) => {
-            if (result.status == 201) {
-                localStorage.token = result.body.data[0].token
-                if (result.body.data[0].user.isAdmin == true) {
+        .then(response => response.json().then(data => ({ status: response.status, body: data })))
+        .then((response) => {
+            if (response.status == 201) {
+                localStorage.token = response.body.data[0].token
+                localStorage.userId = response.body.data[0].user.id
+                if (response.body.data[0].user.isAdmin == true) {
                     localStorage.isAdmin = new Boolean(true)
                     window.location.href = 'admin.html'
                 } else {
                     localStorage.isAdmin = new Boolean(false)
                     window.location.href = 'user.html'
                 }
-            } else if (result.status == 400) {
-                document.getElementById('error-display').innerHTML = result.body.message + "!"
+            } else if (response.status == 400) {
+                document.getElementById('error-display').innerHTML = response.body.message + "!"
                 document.getElementById('error-display').style.display = "block"
                 setTimeout(function () {
                     document.getElementById('error-display').style.display = "none"
                 }, 2000);
             }
             else {
-                document.getElementById('error-display').innerHTML = result.body.message + "!"
+                document.getElementById('error-display').innerHTML = response.body.message + "!"
                 document.getElementById('error-display').style.display = "block"
                 setTimeout(function () {
                     document.getElementById('error-display').style.display = "none"
