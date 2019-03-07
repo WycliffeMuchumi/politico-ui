@@ -36,10 +36,10 @@ window.onload = function getParties() {
             } else {
                 th =
                     `<tr>
-                    <th>Party ID</th>
-                    <th>Party Name</th>
-                    <th>Party HeadQuarters</th>
-                    <th>Party Logo</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>HeadQuarters</th>
+                    <th>Logo</th>
                     <th>Date Created</th>
                  </tr> `
                 parties_table.innerHTML = th
