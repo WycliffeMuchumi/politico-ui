@@ -81,7 +81,6 @@ function getParty(id) {
 function deleteParty(id) {
     answer = confirm('Are you sure you want to delete party?')
     if (answer) {
-        console.log('confirmed')
         fetch('https://barno-politico-api.herokuapp.com/api/v2/parties/' + id, {
             method: 'DELETE',
             headers: new Headers({
