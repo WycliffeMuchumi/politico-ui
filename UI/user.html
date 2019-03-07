@@ -43,6 +43,10 @@
         <a href="#" class="tablink" onclick="openLink(event, 'candidates')" id="loadCandidates"><i
                 class="fas fa-user-secret"></i>
             candidates</a>
+
+        <a href="#" class="tablink" onclick="openLink(event, 'vote')" id="loadVoteOptions"><i
+                class="fas fa-vote-yea"></i>
+            Vote</a>
     </div>
 
     <div class="main">
@@ -70,9 +74,26 @@
         <div id="candidates" class="tab-content" style="display:none">
             <table id="candidates_table"></table>
         </div>
+        <div id="vote" class="tab-content" style="display:none">
+            <div class="input-form">
+                <div id="error-displays"></div>
+                <div id="success-displays"></div>
+                <form id="voting">
+                    <select id="officeVoteOptions">
+                        <option value="0">Choose Office</option>
+                    </select>
+                    <select id="candidateOptions">
+                        <option value="0">Choose Candidate</option>
+                    </select> <br><br>
+                    <input type="submit" value="Vote">
+                </form>
+            </div>
+        </div>
         <div class="footer">
             <p>&copy; 2019 Politico!</p>
         </div>
+        <script src="js/vote.js"></script>
+        <script src="js/voteOptions.js"></script>
         <script src="js/candidates.js"></script>
         <script src="js/express_interest.js"></script>
         <script src="js/options.js"></script>
