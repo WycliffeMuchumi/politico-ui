@@ -39,6 +39,10 @@
         <a href="#" class="tablink" onclick="openLink(event, 'nomination')" id="loadOptions"><i
                 class="fas fa-thumbs-up"></i>
             Nominations</a>
+
+        <a href="#" class="tablink" onclick="openLink(event, 'candidates')" id="loadCandidates"><i
+                class="fas fa-user-secret"></i>
+            candidates</a>
     </div>
 
     <div class="main">
@@ -63,10 +67,13 @@
                 </form>
             </div>
         </div>
+        <div id="candidates" class="tab-content" style="display:none">
+            <table id="candidates_table"></table>
+        </div>
         <div class="footer">
             <p>&copy; 2019 Politico!</p>
         </div>
-        
+        <script src="js/candidates.js"></script>
         <script src="js/express_interest.js"></script>
         <script src="js/options.js"></script>
         <script src="js/offices.js"></script>
