@@ -30,11 +30,12 @@
         <a href="#" class="tablink" onclick="openLink(event, 'offices')" id="loadOffices"><i
                 class="fas fa-landmark"></i>
             Offices</a>
-        <!-- <a href="#" class="tablink" onclick="openLink(event, 'politicians')"><i class="fas fa-user-secret"></i>
+        <a href="#" class="tablink" onclick="openLink(event, 'politicians')" id="loadPoliticians"><i
+                class="fas fa-user-secret"></i>
             Politicians</a>
-        <a href="#" class="tablink" onclick="openLink(event, 'nomination')"><i class="fas fa-thumbs-up"></i>
-            Requests</a>
-        <a href="#" class="tablink" onclick="openLink(event, 'results')"><i class="fas fa-poll"></i> Results</a> -->
+        <!-- <a href="#" class="tablink" onclick="openLink(event, 'nomination')"><i class="fas fa-thumbs-up"></i>
+            Requests</a> -->
+        <!-- <a href="#" class="tablink" onclick="openLink(event, 'results')"><i class="fas fa-poll"></i> Results</a> -->
     </div>
 
     <div class="main">
@@ -48,118 +49,13 @@
             <table id="offices_table"></table>
         </div>
 
-        <!-- <div id="politicians" class="tab-content" style="display:none">
-            <h1>Nominated Politicians</h1>
-            <p>Presidential Nominees</p>
-            <table>
-                <tr>
-                    <th>Politician ID</th>
-                    <th>Avatar</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Elective Office</th>
-                    <th>Party</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td><img src="img/avatars/woman.png" alt="Mit Romney"></td>
-                    <td>Hillary</td>
-                    <td>Clinton</td>
-                    <td>President</td>
-                    <td>Democrat</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img src="img/avatars/man.png" alt="Donald Trump"></td>
-                    <td>Donald</td>
-                    <td>Trump</td>
-                    <td>President</td>
-                    <td>Republican</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img src="img/avatars/man.png" alt="George Washington"></td>
-                    <td>George</td>
-                    <td>Washington</td>
-                    <td>President</td>
-                    <td>Libertarian Party</td>
-                </tr>
-            </table>
-            <p>Gubernatorial Nominees</p>
-            <table>
-                <tr>
-                    <th>Politician ID</th>
-                    <th>Avatar</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Elective Office</th>
-                    <th>Party</th>
-                </tr>
-
-                <tr>
-                    <td>1</td>
-                    <td><img src="img/avatars/man.png" alt="Wayne Rooney"></td>
-                    <td>Wayne</td>
-                    <td>Rooney</td>
-                    <td>Gubernatorial</td>
-                    <td>Republican</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img src="img/avatars/woman.png" alt="Mariah Carey"></td>
-                    <td>Mariah</td>
-                    <td>Carey</td>
-                    <td>Gubernatorial</td>
-                    <td>Democrat</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img src="img/avatars/man.png" alt="George Washington"></td>
-                    <td>Michael</td>
-                    <td>Bolton</td>
-                    <td>Gubernatorial</td>
-                    <td>Libertarian</td>
-                </tr>
-            </table>
-            <p>National Assembly Nominees</p>
-            <table>
-                <tr>
-                    <th>Politician ID</th>
-                    <th>Avatar</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Elective Office</th>
-                    <th>Party</th>
-                </tr>
-
-                <tr>
-                    <td>1</td>
-                    <td><img src="img/avatars/man.png" alt="Mo Salah"></td>
-                    <td>Mo</td>
-                    <td>Salah</td>
-                    <td>National Assembly</td>
-                    <td>Republican</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img src="img/avatars/man.png" alt="Titus Bramble"></td>
-                    <td>Titus</td>
-                    <td>Bramble</td>
-                    <td>National Assembly</td>
-                    <td>Democrat</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img src="img/avatars/man.png" alt="Olivier Giroud"></td>
-                    <td>Olivier</td>
-                    <td>Giroud</td>
-                    <td>National Assembly</td>
-                    <td>Libertarian</td>
-                </tr>
-            </table>
+        <div class="tab-content" id="politicians" style="display:none">
+            <div id="error-display"></div>
+            <div id="success-display"></div>
+            <table id="politicians_table"></table>
         </div>
 
-        <div id="nomination" class="tab-content" style="display:none">
+        <!-- <div id="nomination" class="tab-content" style="display:none">
             <h1>Nomination Requests</h1>
             <p>Presidential Requests</p>
             <table>
@@ -407,7 +303,9 @@
     <div class="footer">
         <p>&copy; 2019 Politico!</p>
     </div>
-    <!-- <script src="js/edit-party.js"></script> -->
+    <script src="js/politicians.js"></script>
+    <script src="js/politicians.js"></script>
+    <script src="js/edit-party.js"></script>
     <script src="js/parties.js"></script>
     <script src="js/router.js"></script>
     <script src="js/offices.js"></script>
