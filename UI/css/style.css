@@ -123,6 +123,7 @@ label {
     padding: 10px 10px;
     border-radius: 4px;
     display: none;
+    margin-bottom: 10px;
 }
 
 #error-display {
@@ -133,6 +134,29 @@ label {
     padding: 10px 10px;
     border-radius: 4px;
     display: none;
+    margin-bottom: 10px;
+}
+
+#success-displays {
+    color: #00b33c;
+    font-weight:800;
+    background-color: #e6ffee;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 4px;
+    display: none;
+    margin-bottom: 10px;
+}
+
+#error-displays {
+    color: #ff0000;
+    font-weight:800;
+    background-color: #ffe6e6;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 4px;
+    display: none;
+    margin-bottom: 10px;
 }
 
 .container .input-form #error-display {

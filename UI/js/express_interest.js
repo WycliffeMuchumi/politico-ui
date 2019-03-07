@@ -16,7 +16,7 @@ function expressInterest(e) {
         body: JSON.stringify({
             user: parseInt(userId, 10), office: parseInt(officeId, 10), party: parseInt(partyId, 10)
         })
-        
+
     })
         .then((response) => response.json())
         .then((response) => {
