@@ -1,6 +1,6 @@
 document.getElementById("loadPoliticians").addEventListener('click', getPoliticians)
 function getPoliticians() {
-    fetch('https://barno-politico-api.herokuapp.com/api/v2/office/2/candidates', {
+    fetch('https://barno-politico-api.herokuapp.com/api/v2/office/2/politicians', {
         method: 'GET',
         headers: new Headers({
             'Accept': 'application/json',
