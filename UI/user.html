@@ -47,6 +47,8 @@
         <a href="#" class="tablink" onclick="openLink(event, 'vote')" id="loadVoteOptions"><i
                 class="fas fa-vote-yea"></i>
             Vote</a>
+        <a href="#" class="tablink" onclick="openLink(event, 'results')" id="loadResults"><i class="fas fa-poll"></i>
+            Election Results</a>
     </div>
 
     <div class="main">
@@ -89,9 +91,13 @@
                 </form>
             </div>
         </div>
+        <div id="results" class="tab-content" style="display:none">
+            <table id="results_table"></table>
+        </div>
         <div class="footer">
             <p>&copy; 2019 Politico!</p>
         </div>
+        <script src="js/results.js"></script>
         <script src="js/vote.js"></script>
         <script src="js/voteOptions.js"></script>
         <script src="js/candidates.js"></script>
