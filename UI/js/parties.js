@@ -142,9 +142,29 @@ function displayUserProfile() {
         })
 }
 
+function displayUserVote() {
+    fetch('https://barno-politico-api.herokuapp.com/api/v2/votes/' + localStorage.userId, {
+        method: 'GET',
+        headers: new Headers({
+            'Accept': 'application/json',
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Authorization': 'Bearer ' + localStorage.token
+        })
+    })
+        .then(response => response.json())
+        .then((response) => {
+            let temp = document.getElementById("vote-data")
+            vote = response['data']
+            temp.innerHTML = " <h2>Your Vote</h2> Office: " + vote.office + "<br>" + "Candidate: " + vote.candidate + "<br>" + "Party:  " + vote.party
+
+        })
+}
+
 window.onload = function start() {
     getUser();
     getParties();
     displayUserProfile();
+    displayUserVote();
 
 }
