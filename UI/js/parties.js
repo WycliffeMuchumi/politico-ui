@@ -1,4 +1,4 @@
-window.onload = function getParties() {
+function getParties() {
     fetch('https://barno-politico-api.herokuapp.com/api/v2/parties', {
         method: 'GET',
         headers: new Headers({
@@ -101,4 +101,50 @@ function deleteParty(id) {
             })
 
     }
+}
+
+function getUser() {
+    fetch('https://barno-politico-api.herokuapp.com/api/v2/auth/users/' + localStorage.userId, {
+        method: 'GET',
+        headers: new Headers({
+            'Accept': 'application/json',
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Authorization': 'Bearer ' + localStorage.token
+        })
+    })
+        .then(response => response.json())
+        .then((response) => {
+            let link = document.getElementById("user")
+            let user = response['data'][0]
+            link.innerHTML = user[1]
+        })
+}
+
+function displayUserProfile() {
+    fetch('https://barno-politico-api.herokuapp.com/api/v2/auth/users/' + localStorage.userId, {
+        method: 'GET',
+        headers: new Headers({
+            'Accept': 'application/json',
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Authorization': 'Bearer ' + localStorage.token
+        })
+    })
+        .then(response => response.json())
+        .then((response) => {
+            let template = document.getElementById("user-profile")
+            let firstname = response['data'][0][1]
+            let lastname = response['data'][0][2]
+            let othername = response['data'][0][3]
+            let date = response['data'][0][9]
+            template.innerHTML = "Full Names:   " + firstname + " " + lastname + " " + othername + "<br>Date Registered:   " + date
+        })
+}
+
+window.onload = function start() {
+    getUser();
+    getParties();
+    displayUserProfile();
+
 }
