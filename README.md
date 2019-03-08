@@ -11,8 +11,8 @@ Politico has three types of users:-
 - Voter(user)
 
 ### System Administrator (Admin)
-* An admin represents the electoral body that owns and manages the system.
-* The Admin user has privileges that enables him manage Politico application data. An admin user can:-
+An admin represents the electoral body that owns and manages the system.
+The Admin user has privileges that enables him manage Politico application data. An admin user can:-
  - Create political parties
  - Edit political parties 
  - Delete political parties
@@ -20,8 +20,8 @@ Politico has three types of users:-
  - Register politicians to become election candidates
 
  ### User
- * A user represents clients of the electoral body which includes, but not limited to voters and politicians.
- * A user signs up in order to use politico application. Once he/she is successfully signed up, he should be able to;
+ A user represents clients of the electoral body which includes, but not limited to voters and politicians.
+ A user signs up in order to use politico application. Once he/she is successfully signed up, he should be able to;
  - View registered political parties
  - View available government offices
  - Enrol himself as a politician by expressing interest in a government office
@@ -30,12 +30,13 @@ Politico has three types of users:-
 
 
 ## Accessing and test running Politico
-* The hosted Politico UI can be accessed [here](https://kipruto.github.io/politico-ui/UI/)
-* To run it locally:
+To run test run politico locally:
 - open your terminal application
 - `git clone https://github.com/kipruto/politico-ui.git`
 - `cd politico-u/UI`
 - launch `index.html` in your favorite browser
+
+The hosted Politico UI can be accessed [here](https://kipruto.github.io/politico-ui/UI/)
 
 * Use the following default admin login credentials:
 ```
@@ -46,5 +47,5 @@ Politico has three types of users:-
 * Sign up and login to to access and test user functionalities
 
 ## Project Management
-Pivotal Tracker was used as a project management tool. You can access the Story Board [here](https://www.pivotaltracker.com/n/projects/2241895)
+Pivotal Tracker was used as a project management tool. You can access the story board [here](https://www.pivotaltracker.com/n/projects/2241895)
 
