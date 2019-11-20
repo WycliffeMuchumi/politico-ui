@@ -32,11 +32,11 @@ The Admin user has privileges that enables him manage Politico application data.
 ## Accessing and test running Politico
 To run test run politico locally:
 - open your terminal application
-- `git clone https://github.com/kipruto/politico-ui.git`
+- `git clone https://github.com/ywalakamar/politico-ui.git`
 - `cd politico-u/UI`
 - launch `index.html` in your favorite browser
 
-The hosted Politico UI can be accessed [here](https://kipruto.github.io/politico-ui/UI/)
+The hosted Politico UI can be accessed [here](https://ywalakamar.github.io/politico-ui/UI/)
 
 * Use the following default admin login credentials:
 ```
